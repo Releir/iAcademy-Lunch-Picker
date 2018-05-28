@@ -1,0 +1,14 @@
+{% extends 'stores/layout.html' %}
+
+{% block content %}
+<div class="container center-align">
+    <h3>You should go to ....</h3>
+    <br>
+    <!-- <h3>{{store.name}}</h3> -->
+    <p class="flow-text white indigo-text darken-4 z-depth-4">{{store.name}}</p>
+    <h3>{% load static %}<img src="{% static '' %}{{store.image}}" height="400" width="500" alt="image"></h3>
+    <!-- <h3>{{store.description}}</h3> -->
+    <p class="flow-text white indigo-text darken-4 z-depth-4">{{store.description}}</p>
+    <h3><a href='{{store.location}}' target="_blank">Found Here!</a></h3>
+</div>
+{% endblock %}
